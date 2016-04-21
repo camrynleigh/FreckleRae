@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Freckled Rae Photography</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="bower_components/lightbox2/dist/css/lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+</head>
+
+<body>
+    <!--HEADER-->
+    <div class="mainBackground">
+        <div class="container">
+            <div class="row">
+                <h1 id="mainTitle">Freckled Rae<class id="colorChange">Photography</id> <span class="glyphicon glyphicon-camera" aria-hidden="true" style="font-size:.2em;"></span></h1>
+                <div class="hr">
+                    <hr/>
+                </div>
+                <div class="col-md-12 text-center" id="social">
+                    <a href="https://www.facebook.com/Freckled-Rae-Photography-421036697944030/" target="_blank">Facebook</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+                    <a href="https://www.instagram.com/freckled_rae_photography_mn/?ref=badge" target="_blank">Instagram</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+                    <a href="https://www.pinterest.com/freckledraephot/" target="_blank">Pinterest</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                </div>
+            </div>
+        </div>
+        <!--HEADER END-->
+
+
+        <!--NAVIGATION-->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar-brand-centered">
+                        <div class="nav navbar-nav">
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            <a href="/">Home</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            <div class="dropdown">
+                                <button class="dropbtn">Information</button>
+                                <div class="dropdown-content">
+                                    <a href="#about"><strong>About</strong></a>
+                                    <a href="#testimonal"><strong>Testimonals</strong></a>
+                                    <br>
+                                    <a href="#faq"><strong>FAQ</strong></a>
+                                </div>
+                            </div>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            <a href="#investment">Investment</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            <div class="dropdown">
+                                <button class="dropbtn">Galleries</button>
+                                <div class="dropdown-content">
+                                    <a href="#newborn"><strong>Newborn</strong></a>
+                                    <a href="#children"><strong>Children</strong></a>
+                                    <br>
+                                    <a href="#smash"><strong>Smash Cake</strong></a>
+                                    <a href="#family"><strong>Family/Senior</strong></a>
+                                </div>
+                            </div>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+                            <!--                            <a href="#faq">FAQ</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-->
+                            <a href="#contact">Contact</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--NAVIGATION END-->
+
+
+    <!--SLIDESHOW-->
+    <div>
+        <div class="picDisplay">
+            <div ng-controller="slideShow" id="slideControl">
+                <div>
+                    <uib-carousel active="active" interval="myInterval" class="carousel" data-ride="carousel" no-pause="true">
+                        <uib-slide ng-repeat="slide in slides" index="$index">
+                            <img ng-src="{{slide.image}}" style="margin:auto;">
+                        </uib-slide>
+                    </uib-carousel>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--SLIDESHOW END-->
+
+
+    <!--ABOUT-->
+    <div class="aboutBackground">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center" id="about">
+                    <br>
+                    <!--
+                    <div class="hr">
+                        <hr/>
+                    </div>
+-->
+                    <h2 id="aboutTitle">Meet Deserae<span class="glyphicon glyphicon-camera" aria-hidden="true" style="font-size:.2em;"></span></h2>
+
+                    <div class="hr">
+                        <hr/>
+                    </div>
+
+
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12" id="familyPic">
+                    <img class="center-block" src="images/familyPhoto.jpg" width="500px" height="500px" class="img-responsive">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <br>
+                    <p class="aboutSection">A little about me.... I have always shared a love for photography. As a young girl, I can vividly remember having photoshoots with my best friend almost every weekend. We would toss up a sheet, whip out our disposable cameras and strike a pose.</p>
+                    <p class="aboutSection">Right before I became pregnant with our first child, I knew I wanted to learn how to properly use my camera with the goal of eventually taking beautiful pictures of our family. One class turned into two, two turned into three, leading to where I am today.</p>
+                    <p class="aboutSection"> My family and I made the move from Las Vegas to the Twin Cities for my husband to attend grad school. The Twin Cities are beautiful, lively, and full of things to do and places to go. We are looking forward to making new memories and exploring all that this wonderful state has to offer.</p>
+                    <p class="aboutSection"> People routinely ask, why is it called Freckled Rae Photography? Well, I’m glad you asked. My name is Deserae, hence the Rae. And I have an abundance of angel kisses, aka, FRECKLES!</p>
+                    <br>
+                    <ul class="aboutSection"> <b>Fun facts about me:</b></ul>
+                    <li class="aboutSection">I have worked with children with Autism for over 10 years</li>
+                    <li class="aboutSection">I love donuts, ice cream, BBQ ribs and tacos </li>
+                    <li class="aboutSection">I love playing sports </li>
+                    <li class="aboutSection">I enjoy going for bike rides and rollerblading</li>
+                    <li class="aboutSection">My wardrobe consist of yoga pants </li>
+                    <li class="aboutSection">I have sky dived, bungee jumped, gone up in a hot air balloon and just recently did the POLAR PLUNGE!!!</li>
+                    <br>
+                    <br>
+                    <p class="aboutSection">I look forward to taking pictures of your loved ones and creating beautiful memories that will last a lifetime. </p>
+                </div>
+            </div>
+        </div>
+        <div class="hr">
+            <hr/>
+        </div>
+    </div>
+
+
+    <!--ABOUT END-->
+
+
+    <!--INVESTMENT-->
+    <div class="investBackground">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center" id="investment">
+                    <br>
+                    <!--
+                    <div class="hr">
+                        <hr/>
+                    </div>
+-->
+                    <br>
+                    <h3 id="investTitle">Investment <span class="glyphicon glyphicon-camera" aria-hidden="true" style="font-size:.2em;"></span></h3>
+                    <!--
+                    <div class="hr">
+                        <hr/>
+                    </div>
+-->
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <img src="images/Newborn%20Price.jpg" width="1100px" height="300px" class="img-responsive">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h4 class="investSection">Newborn Packages</h4>
+                    <br>
+                    <p>The ideal time to photograph your newborn is between 5-12 days old. Due to the fact that I have limited availability each month, it is very important that you contact me 2-3 months before your due date. This also gives us enough time to go over any custom set-ups you would like during your session. Newborn sessions can last anywhere from 2-3.5 hours.</p>
+                    <p>Both packages include a consultation to go over your shoot, discussing colors and themes for your session. There is a $75 retainer fee to reserve your session. This retainer fee is non-refundable and separate from the prices listed below. Payment plans accepted at no additional cost.</p>
+                    <br>
+                    <p><strong>Package 1: $250*</strong> </p>
+                    <p><b>3-4 set ups</b></p>
+                    <p><b>25- 30 digital images in both color and B&amp;W</b></p>
+                    <p><b>Print Release</b></p>
+                    <p><b>4X6 professional prints (color only)</b></p>
+                    <p><b>(This package is for newborn and family members)</b></p>
+                    <br>
+                    <p><strong>Package 2: $175* </strong></p>
+                    <p><b>2 set ups</b></p>
+                    <p><b>12-15 images in both color and B&amp;W</b></p>
+                    <p><b>Print Release</b></p>
+                    <p><b>(This package is for newborn only)</b></p>
+                    <p>*Multiples may include an additional $25- $75</p>
+
+                    <div class="hr">
+                        <hr/>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <img src="images/Watch%20Me%20Grow%20Price.jpg" width="1100px" height="300px" class="img-responsive">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h4 class="investSection">Watch Me Grow Packages</h4>
+                    <br>
+                    <p>This package includes a consultation to go over your shoot, discussing colors and themes for your sessions. There is a separate $75 retainer fee to reserve each of your separate sessions. This retainer fee is non-refundable and separate from the prices listed below. Payment plans accepted at no additional cost.</p>
+                    <br>
+                    <p><strong>Newborn: $250*</strong></p>
+                    <p><b>3-4 set ups</b></p>
+                    <p><b>25-30 digital images in both color and B&amp;W</b></p>
+                    <br>
+                    <p><strong>6-9 Month Portrait: $150*</strong></p>
+                    <p><b>2 set ups/outfit changes</b></p>
+                    <p><b>12-15 digital images in both color and B&amp;W</b></p>
+                    <br>
+                    <p><strong>Smash Cake: $225*</strong> </p>
+                    <p><b>Cake, banner, outfit (restrictions apply)</b></p>
+                    <p><b>3-4 set ups/outfit changes</b></p>
+                    <p><b>25-30 digital images in both color and B&amp;W</b></p>
+                    <p><b>In addition, you will receive 4X6 fully edited professional prints (color only) from each session listed above, as well as a free mini session at the child’s 18-month milestone (can also be used as an outdoor family session). Each session includes printing rights and easy downloads of your images to share with your family and friends.</b></p>
+                    <p>*Multiples may include an additional $25- $75</p>
+                    <p>If you are interested in purchasing a Newborn, 3 month, 6 month, 9 month and a smash cake session, please email me for prices and specials regarding this inquiry.</p>
+                    <p>Custom birth announcements </p>
+                    <div class="hr">
+                        <hr/>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <img src="images/Portriat%20Price.jpg" width="1100px" height="300px" class="img-responsive">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h4 class="investSection">Portrait Packages</h4>
+                    <br>
+                    <p>The Portrait Packages are for ages 3 months and up. These sessions can be booked at anytime. Due to limited sessions available each month, I encourage you to schedule 2-4 weeks prior to your desired date. This will also allow us time to go over backdrops and props you would like to use for your session. These sessions can typically last up to 90 minutes.</p>
+                    <p>Both packages include a consultation to go over your shoot, discussing colors and themes for your session. There is a $75 retainer fee to reserve your session. This retainer fee is non-refundable and separate from the prices listed below. Payment plans accepted at no additional cost.</p>
+                    <br>
+                    <p><strong>Package 1: $200</strong></p>
+                    <p><b>3 set ups</b></p>
+                    <p><b>20-25 digital images in both color and B&amp;W</b></p>
+                    <p><b>Print Release</b></p>
+                    <p><b>4X6 professional prints (color only</b>)</p>
+                    <p><b>(This package is for one or more children)</b></p>
+                    <br>
+                    <p><strong>Package 2: $150</strong></p>
+                    <p><b>2 set ups</b></p>
+                    <p><b>12-15 images in both color and B&amp;W</b></p>
+                    <p><b>Print Release</b></p>
+                    <p>(This package is available for one child only)</p>
+                    <div class="hr">
+                        <hr/>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <img src="images/Smah%20cake%20%E2%80%A8price.jpg" width="1100px" height="300px" class="img-responsive">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h4 class="investSection">Smash Cake Packages</h4>
+                    <br>
+                    <p>I love creating custom smash cake sessions. Some items may need to be ordered and can take anywhere from 4-6 weeks to receive. Due to this, please contact me 4-8 weeks before your desired photo shoot date. This way we can talk and decide which color scheme
+                        <br> or theme we can create for your baby’s special day.</p>
+                    <p>Both packages include a consultation to go over your shoot, discussing colors and themes for your session. There is a $75 retainer fee to reserve your session. This retainer fee is non-refundable and separate from the prices listed below. Payment plans accepted at no additional cost. </p>
+                    <br>
+                    <p><strong>Package 1: $225*</strong></p>
+                    <p><b>3 set ups</b></p>
+                    <p><b>20-25 digital images in both color and B&amp;W</b></p>
+                    <p><b>Print Release</b></p>
+                    <p><b>4X6 professional prints (color only)</b></p>
+                    <p><b>(This package is for one or more children)</b></p>
+                    <br>
+                    <p><strong>Package 2: $175</strong></p>
+                    <p><b>2 set ups</b></p>
+                    <p><b>12-15 images in both color and B&amp;W</b></p>
+                    <p><b> Print Release</b></p>
+                    <p>(This package is available for one child only)</p>
+                    <p>*Multiples may include an additional $25- $75</p>
+                    <div class="hr">
+                        <hr/>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <img src="images/Family%20Price.jpg" width="1100px" height="300px" class="img-responsive">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h4 class="investSection">Family Packages</h4>
+                    <br>
+                    <p>All outdoor family sessions are held around the Woodbury area. If you wish to have photos taken in another area, additional prices may apply. These packages are for immediate family members only. Please contact me for any additional pricing directed to larger groups. There is a $75 retainer fee to reserve your session. This retainer fee is non-refundable and separate from the prices listed below. Payment plans are available at no additional cost.</p>
+                    <br>
+                    <p><strong>Package 1: $200*</strong></p>
+                    <p><b>90 minutes</b></p>
+                    <p><b>20-25 digital images in both color and B&amp;W</b> </p>
+                    <p><b>Print Release</b></p>
+                    <br>
+                    <p><strong>Package 2: $150*</strong></p>
+                    <p><b>45 minutes</b></p>
+                    <p><b>12-15 digital images in both color and B&amp;W</b></p>
+                    <p><b>Print Release</b></p>
+                    <p>*Prices above are for immediate family members only</p>
+                    <div class="hr">
+                        <hr/>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <img src="images/senior%20price.jpg" width="1100px" height="300px" class="img-responsive">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h4 class="investSection">Senior Packages</h4>
+                    <br>
+                    <p>All outdoor senior sessions are held around the Woodbury area. If you wish to have photos taken in another area, additional prices may apply. There is a $75 retainer fee to reserve your session. This retainer fee is non-refundable and separate from the prices listed below. Additional prices may apply for custom outdoor set-ups. Payment plans are available at no additional cost.</p>
+                    <br>
+                    <p><strong>Package 1: $325*</strong></p>
+                    <p><b>Consultation to go over your outfits/props/locations</b></p>
+                    <p><b>2 separate days/location up to 2.5 hours total</b></p>
+                    <p><b>3(+) outfit changes</b></p>
+                    <p><b>30-35 images in both color and B&amp;W</b></p>
+                    <p><b>Professional prints (4x6 color only)</b></p>
+                    <p><b>Print Release</b></p>
+                    <p>(This session includes cap and gown pictures)</p>
+                    <br>
+                    <p><strong>Package 2: $225*</strong></p>
+                    <p><b>Consultation to go over your outfits/props/locations</b></p>
+                    <p><b>1-2 locations up to 90 minutes</b></p>
+                    <p><b>2 outfit changes</b></p>
+                    <p><b>20-25 digital images in both color and B&amp;W</b></p>
+                    <p><b>Professional Prints (4x6 color only)</b></p>
+                    <p><b>Print Release</b></p>
+                    <br>
+                    <p><strong>Package 3: $175*</strong></p>
+                    <p><b>Consultation to go over your outfits/props/location</b></p>
+                    <p><b>1 location, 45 minutes</b></p>
+                    <p><b>1 outfit</b></p>
+                    <p><b>12-15 digital images in both color and B&amp;W</b></p>
+                    <p><b>Print Release</b></p>
+                    <p>* Additional prices may apply for friends/family members in photo shoot.</p>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <b id="investEnd">Pricing is subject to change at any time without notification.</b>
+                    <br>
+                    <b id="investEnd">All sessions booked will reflect pricing at time of booking</b>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hr">
+        <hr/>
+    </div>
+    <!--INVESTMENT END-->
+
+    <!--GALLERY-->
+    <div class="galleryBackground" id="gallery">
+        <div class="container">
+            <div class="row">
+                <!--
+                <div class="hr">
+                    <hr/>
+                </div>
+-->
+                <h4 class="text-center" id="galleryTitle">Newborn<span class="glyphicon glyphicon-camera" aria-hidden="true" style="font-size:.2em;"></span></h4>
+                <p id="enlarge">(click to enlarge image)</p>
+                <!--
+                <div class="hr">
+                    <hr/>
+                </div>
+-->
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3" id="newborn">
+                            <div class="images">
+                                <a href="newborn/1.jpg" rel="lightbox" data-lightbox="images"><img src="newborn/1.jpg" width="200px" height="200px" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="images">
+                                <a href="newborn/15.jpg" rel="lightbox" data-lightbox="images"><img src="newborn/15.jpg" width="200px" height="200px" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="images">
+                                <a href="newborn/24.jpg" rel="lightbox" data-lightbox="images"><img src="newborn/24.jpg" width="200px" height="200px" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="images">
+                                <a href="newborn/26.jpg" rel="lightbox" data-lightbox="images"><img src="newborn/26.jpg" width="200px" height="200px" class="img-responsive"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="images">
+                                <a href="newborn/3.jpg" rel="lightbox" data-lightbox="images"><img src="newborn/3.jpg" width="200px" height="200px" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="images">
+                                <a href="newborn/6.jpg" rel="lightbox" data-lightbox="images"><img src="newborn/6.jpg" width="200px" height="200px" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="images">
+                                <a href="newborn/21.jpg" rel="lightbox" data-lightbox="images"><img src="newborn/21.jpg" width="200px" height="200px" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="images">
+                                <a href="newborn/33.jpg" rel="lightbox" data-lightbox="images"><img src="newborn/33.jpg" width="200px" height="200px" class="img-responsive"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="images">
+                                <a href="newborn/31.jpg" rel="lightbox" data-lightbox="images"><img src="newborn/31.jpg" width="200px" height="200px" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="images">
+                                <a href="newborn/32.jpg" rel="lightbox" data-lightbox="images"><img src="newborn/32.jpg" width="200px" height="200px" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="images">
+                                <a href="newborn/38.jpg" rel="lightbox" data-lightbox="images"><img src="newborn/38.jpg" width="200px" height="200px" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="images">
+                                <a href="newborn/59.jpg" rel="lightbox" data-lightbox="images"><img src="newborn/59.jpg" width="200px" height="200px" class="img-responsive"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="images">
+                                <a href="newborn/35.jpg" rel="lightbox" data-lightbox="images"><img src="newborn/35.jpg" width="200px" height="200px" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="images">
+                                <a href="newborn/40.jpg" rel="lightbox" data-lightbox="images"><img src="newborn/40.jpg" width="200px" height="200px" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="images">
+                                <a href="newborn/58.jpg" rel="lightbox" data-lightbox="images"><img src="newborn/58.jpg" width="200px" height="200px" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="images">
+                                <a href="newborn/62.jpg" rel="lightbox" data-lightbox="images"><img src="newborn/62.jpg" width="200px" height="200px" class="img-responsive"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hr">
+                    <hr/>
+                </div>
+
+                <br>
+                <br>
+                <h4 class="text-center" id="galleryTitle">Children<span class="glyphicon glyphicon-camera" aria-hidden="true" style="font-size:.2em;"></span></h4>
+                <p id="enlarge">(click to enlarge image)</p>
+                <!--
+                <div class="hr">
+                    <hr/>
+                </div>
+-->
+            </div>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3" id="children">
+                        <div class="images">
+                            <a href="children/63.jpg" rel="lightbox" data-lightbox="images"><img src="children/63.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="children/20.jpg" rel="lightbox" data-lightbox="images"><img src="children/20.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="children/27.jpg" rel="lightbox" data-lightbox="images"><img src="children/27.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="children/30.jpg" rel="lightbox" data-lightbox="images"><img src="children/30.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="children/10.jpg" rel="lightbox" data-lightbox="images"><img src="children/10.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="children/19.jpg" rel="lightbox" data-lightbox="images"><img src="children/19.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="children/29.jpg" rel="lightbox" data-lightbox="images"><img src="children/29.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="children/36.jpg" rel="lightbox" data-lightbox="images"><img src="children/36.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="children/34.jpg" rel="lightbox" data-lightbox="images"><img src="children/34.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="children/37.jpg" rel="lightbox" data-lightbox="images"><img src="children/37.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="children/41.jpg" rel="lightbox" data-lightbox="images"><img src="children/41.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="children/49.jpg" rel="lightbox" data-lightbox="images"><img src="children/49.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="children/39.jpg" rel="lightbox" data-lightbox="images"><img src="children/39.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="children/42.jpg" rel="lightbox" data-lightbox="images"><img src="children/42.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="children/43.jpg" rel="lightbox" data-lightbox="images"><img src="children/43.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="children/45.jpg" rel="lightbox" data-lightbox="images"><img src="children/45.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="children/50.jpg" rel="lightbox" data-lightbox="images"><img src="children/50.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="children/56.jpg" rel="lightbox" data-lightbox="images"><img src="children/56.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="children/65.jpg" rel="lightbox" data-lightbox="images"><img src="children/65.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="children/68.jpg" rel="lightbox" data-lightbox="images"><img src="children/68.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hr">
+                <hr/>
+            </div>
+
+            <br>
+            <br>
+            <h4 class="text-center" id="galleryTitle">Smash Cake<span class="glyphicon glyphicon-camera" aria-hidden="true" style="font-size:.2em;"></span></h4>
+            <p id="enlarge">(click to enlarge image)</p>
+            <!--
+            <div class="hr">
+                <hr/>
+            </div>
+-->
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3" id="smash">
+                        <div class="images">
+                            <a href="smash/5.jpg" rel="lightbox" data-lightbox="images"><img src="smash/5.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="smash/12.jpg" rel="lightbox" data-lightbox="images"><img src="smash/12.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="smash/8.jpg" rel="lightbox" data-lightbox="images"><img src="smash/8.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="slideshow/test8.jpg" rel="lightbox" data-lightbox="images"><img src="slideshow/test8.jpg" s width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="smash/47.jpg" rel="lightbox" data-lightbox="images"><img src="smash/47.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="smash/64.jpg" rel="lightbox" data-lightbox="images"><img src="smash/64.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="smash/51.jpg" rel="lightbox" data-lightbox="images"><img src="smash/51.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="smash/54.jpg" rel="lightbox" data-lightbox="images"><img src="smash/54.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hr">
+                <hr/>
+            </div>
+
+            <br>
+            <h4 class="text-center" id="galleryTitle">Family &amp; Senior<span class="glyphicon glyphicon-camera" aria-hidden="true" style="font-size:.2em;"></span></h4>
+            <p id="enlarge">(click to enlarge image)</p>
+            <!--
+            <div class="hr">
+                <hr/>
+            </div>
+-->
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3" id="family">
+                        <div class="images">
+                            <a href="fam/2.jpg" rel="lightbox" data-lightbox="images"><img src="fam/2.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="fam/11.jpg" rel="lightbox" data-lightbox="images"><img src="fam/11.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="fam/13.jpg" rel="lightbox" data-lightbox="images"><img src="fam/13.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="fam/4.jpg" rel="lightbox" data-lightbox="images"><img src="fam/4.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="fam/14.jpg" rel="lightbox" data-lightbox="images"><img src="fam/14.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="fam/18.jpg" rel="lightbox" data-lightbox="images"><img class="img-responsive" src="fam/18.jpg" width="200px" height="200px"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="fam/28.jpg" rel="lightbox" data-lightbox="images"><img class="img-responsive" src="fam/28.jpg" width="200px" height="200px"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="fam/44.jpg" rel="lightbox" data-lightbox="images"><img src="fam/44.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="fam/16.jpg" rel="lightbox" data-lightbox="images"><img src="fam/16.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="fam/7.jpg" rel="lightbox" data-lightbox="images"><img src="fam/7.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="fam/17.jpg" rel="lightbox" data-lightbox="images"><img src="fam/17.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="fam/22.jpg" rel="lightbox" data-lightbox="images"><img src="fam/22.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="fam/46.jpg" rel="lightbox" data-lightbox="images"><img src="fam/46.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="fam/52.jpg" rel="lightbox" data-lightbox="images"><img src="fam/52.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="fam/55.jpg" rel="lightbox" data-lightbox="images"><img src="fam/55.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="images">
+                            <a href="fam/23.jpg" rel="lightbox" data-lightbox="images"><img src="fam/23.jpg" width="200px" height="200px" class="img-responsive"></a>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--GALLERY END-->
+
+
+    <!--FAQ-->
+    <div class="faqBackground">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center" id="faq">
+                    <br>
+                    <!--
+                    <div class="hr">
+                        <hr/>
+                    </div>
+-->
+                    <br>
+                    <h3 id="faqTitle">FAQ<span class="glyphicon glyphicon-camera" aria-hidden="true" style="font-size:.2em;"></span></h3>
+
+                    <div class="hr">
+                        <hr/>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="faqSection"><b>1. When should I call to schedule a newborn session?</b>
+                        <br> It is best to contact me while you are still pregnant; 3-4 months before your due date is ideal. This will allow me to schedule your due date and start preparing for your custom session.
+                        <br>
+
+                        <br><b> 2. What if my baby is already born and I want you to take his/her newborn photos?</b>
+                        <br> No worries, as long as I have room in my schedule to fit you in, I am more than happy to do so.
+                        <br>
+
+                        <br><b> 3. What happens in a consultation (for any session)?</b>
+                        <br> This is a great time for me to sit down with you and for us to get to know one another. I like to take that time to get a feel for your style and anything you would like to see during your photo shoot. I have you fill out a questionnaire so I can start putting together backdrops, props, and outfits needed for your session. After the consultation, we then continue contact through email/phone to finalize all the details. This is also the time when I collect the deposit to reserve your session.
+                        <br>
+
+                        <br><b> 4. What if I am not able to make it to an in-person consultation?</b>
+                        <br> Do not worry; there have been a few times that this has occurred. We then communicate through email and phone if need be.
+                        <br>
+
+                        <br><b> 5. What do I need to bring to the session?</b>
+                        <br>You are not required to bring anything except your extra outfits. If you wish to have anything specific in your photo shoot such as a guitar, blanket, personal prop, you are more than welcome to bring them to the shoot.
+                        <br>
+
+                        <br><b> 6. Do I get to pick the photos?</b>
+                        <br>Due to the fact that many different things go into editing one photo, (contrast, coloring, subject positions, etc.)I do not let clients choose their photos. By doing this, it allows the editing process go much quicker as well. I work hard to ensure the best photos are chosen and edited.
+                        <br>
+
+                        <br><b> 7. When and how will I receive my completed photos?</b>
+                        <br> All sessions take anywhere from 2-3 weeks for full editing. Once they are complete, you will receive an email where you can instantly download them to your computer, as well as share the link with family and friends. If you would like your photos on a CD, I am happy to provide this for you, for an additional $10 fee. If you will receive prints, they will either be mailed, or available for pick up when they arrive and have been looked over by myself (I do this ensure proper printing quality). Sessions between October-December may be subject to a longer editing time frame.
+                        <br>
+
+                        <br><b> 8. Is it possible to receive my photos sooner than the estimated time frame?</b>
+                        <br>Yes, I am happy to have your entire session complete within 3 days of a photoshoot for an additional $50-$75 fee.
+                        <br>
+
+                        <br><b> 9. How does the payment plan work?</b>
+                        <br>I require the $75 retainer fee to reserve your session. The day of the photo shoot you will then pay half of the remaining amount and when the photos are done/ready for pickup, the final balance is due. If you would like to work out a different payment plan, be sure to mention it during the consultation and we can work something out. I do not release the images until the session is paid in full.
+                        <br>
+
+                        <br><b> 10. What happens if I lose my images or my computer crashes?</b>
+                        <br>I am happy to resend you the digital images, for an additional fee of $50 within the first year of your session (not all sessions are kept past one year).
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--FAQ END-->
+
+
+    <!--TESTIMONAL-->
+    <div class="testimonalBackground" id="testimonal">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center" id="about">
+                    <br>
+                    <!--
+                    <div class="hr">
+                        <hr/>
+                    </div>
+-->
+                    <br>
+                    <h2 id="testTitle">Testimonals
+                    <span class="glyphicon glyphicon-camera" aria-hidden="true" style="font-size:.2em;"></span>
+                    </h2>
+                    <div class="hr">
+                        <hr/>
+                    </div>
+
+
+                </div>
+            </div>
+            <br>
+            <div class="row" class="testimonal" id="testimonals">
+                <div class="col-lg-6">
+                    <a href="images/testimonial%201%20pic.jpg" rel="lightbox"><img src="images/testimonial%201%20pic.jpg" width="320px" height="300px" class="img-responsive center-block" id="testPic"></a>
+                    <p id="test1">"Desi photographed my sons newborn photos on short notice and did a fantastic job! She was very patient and took the time with my fussy little one. She is very creative and has a wide variety of props and backdrops. She took the time to find out what style we like and we were able to request specific backdrops. My home décor is rustic and I wanted the pictures to reflect that style. I definitely recommend Desi and plan on returning for future photography!" &nbsp;
+                        <br>-Sara</p>
+                </div>
+                <div class="col-lg-6">
+                    <a href="images/testimonial%202%20copy.jpg" rel="lightbox"><img src="images/testimonial%202.jpg" width="320px" height="300px" class="img-responsive center-block" id="testPic"></a>
+                    <p id="test2">"Thank you! Thank you! Thank you! A million thank you's to you for capturing these pictures of our family! You were a blast to work with and we loved every minute of it! A picture is worth a thousand words, but your pictures leave us speechless. Your creativity and timing caught the personality of our family! Even my dogs enjoyed working with you! Thank you for being so kind to our dogs and capturing their fun and spontaneous personalities! You are like family and we plan to recommend you to all of our friends."
+                        <br>-Ellie</p>
+                </div>
+            </div>
+            <div class="row" class="testimonal" id="testimonals">
+
+                <div class="col-lg-6">
+                    <a href="images/testimonal%203%20pic.jpg" rel="lightbox"><img src="images/testimonal%203%20pic.jpg" width="320px" height="300px" class="img-responsive center-block" id="testPic"></a>
+                    <p id="test3">"I have used Freckled Rae Photography many times. Desi has taken pictures of my kids, who are 12 and 11, two different times and I loved all the pictures. She captured their personalities in the shots, which I adore. We also used her to take our family pictures for Christmas. Not only is Desi extremely patient and fun to work with, she is professional and did a great job getting pictures that I love. She listened to us and worked with what our ideas were, and gave us her suggestions (especially with lighting issues). I would highly recommend her."
+                        <br>-Lonni</p>
+                </div>
+                <div class="col-lg-6">
+                    <a href="images/53%20copy.jpg" rel="lightbox"><img src="images/53%20copy.jpg" width="320px" height="300px" class="img-responsive center-block" id="testPic"></a>
+                    <p id="test3">"I was really impressed with all of Desi’s set-ups. She had so many backdrops and props to chose from. My newborn pictures are very cherishing. She was very considerate, listened to my ideas and was able to share with me quality photos in a timely manner. I really enjoyed my experience with Freckled Rae Photography and I will be going back!"
+                        <br>-Rachel
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--TESTIMONAL END-->
+
+
+
+    <!--FOOTER-->
+    <div class="footerBackground" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <p class="footerTitle">Get Social</p>
+                    <div id="socialIcons">
+                        <a href="https://www.facebook.com/Freckled-Rae-Photography-421036697944030/?fref=ts" title="Facebook" class="btn btn-round btn-clear" target="_blank"><img src=" http://whateveristruepodcast.com/wp-content/uploads/2016/02/Facebook.png" height="40px" width="40px"></a>
+
+                        <a href="https://www.instagram.com/freckled_rae_photography_mn/?ref=badge" title="Facebook" class="btn btn-round btn-clear" target="_blank"><img src="http://static1.squarespace.com/static/53a655b1e4b05b5fe85de6ed/53aa992ce4b05ff168aaddbe/53aa992ee4b06ea147c7bddc/1403700161759/instagram-xxl.png" height="45px" width="45px"></a>
+
+                        <a href="https://www.pinterest.com/freckledraephot" title=" Facebook " class="btn btn-round btn-clear" target="_blank "><img src=" http://freevector.co/wp-content/uploads/2009/11/36850-pinterest-letter-logo-square.png " height="40px " width="40px "></a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center ">
+                    <p class="footerTitle ">Contact</p>
+                    <p class="contact "><span class="glyphicon glyphicon-home " aria-hidden="true " style="font-size:1.0em; "></span> Woodbury, Minnesota</p>
+                    <p class="contact "><span class="glyphicon glyphicon-phone " aria-hidden="true " style="font-size:1.0em; "></span> 651.242.1835</p>
+
+                    <address><a href="mailto:freckledraephotography@gmail.com " id="email ">Email Me</a></address>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>Made by Camryn Muir &copy; 2016</footer>
+    <!--FOOTER END-->
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js "></script>
+    <script src="bower_components/lightbox2/dist/js/lightbox.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js "></script>
+    <script src='//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js'></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="app.js "></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,280 @@
+        #social {
+            padding: 30px;
+            color: black;
+            padding-top: 10px;
+        }
+        
+        body a {
+            font-size: 30px;
+            color: black;
+            font-family: 'Amatic SC', cursive;
+        }
+        
+        div.hr {
+            color: lightsalmon;
+            background-color: lightsalmon;
+            height: 4px;
+            width: auto;
+        }
+        
+        #mainTitle {
+            font-size: 90px;
+            padding-top: 80px;
+            padding-bottom: 12px;
+            font-family: 'Open Sans Condensed', sans-serif;
+            color: black;
+            text-align: center;
+        }
+        
+        #navbar-brand-centered {
+            padding: 10px;
+        }
+        
+        .navbar {
+            opacity: .75;
+        }
+        
+        .navbar-nav {
+            width: 100%;
+            text-align: center;
+            background-color: transparent;
+            background: transparent;
+            border-color: transparent;
+        }
+        
+        .mainBackground {
+            background-image: url("backgrounds/bluePattern.jpg");
+            height: auto;
+            padding-bottom: 12px;
+        }
+        
+        .aboutBackground {
+            background-image: url("backgrounds/strawberry%20papers12.jpg");
+            height: auto;
+        }
+        
+        .picDisplay {
+            height: auto;
+        }
+        
+        #aboutTitle {
+            font-family: 'Amatic SC', cursive;
+            font-size: 80px;
+            padding-top: 20px;
+        }
+        
+        .footerBackground {
+            height: auto;
+            background-image: url("backgrounds/bluePattern.jpg");
+            opacity: .80;
+            padding-bottom: 20px;
+        }
+        
+        .footerTitle {
+            padding-top: 50px;
+            font-size: 50px;
+            font-family: 'Amatic SC', cursive;
+        }
+        
+        #socialIcons {
+            opacity: .40;
+        }
+        
+        .investBackground {
+            height: auto;
+            padding-bottom: 30px;
+            background-image: url("backgrounds/1.jpg");
+        }
+        
+        .contact {
+            font-size: 18px;
+            font-family: 'Open Sans Condensed', sans-serif;
+        }
+        
+        footer {
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 15px;
+            padding-bottom: 5px;
+        }
+        
+        #email {
+            font-size: 30px;
+        }
+        
+        .aboutSection {
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 22px;
+            margin: 25px;
+        }
+        
+        #test1 {
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 18px;
+            padding-bottom: 30px;
+            padding-top: 20px;
+            margin: 20px;
+        }
+        
+        #test2 {
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 18px;
+            padding-bottom: 30px;
+            padding-top: 20px;
+            margin: 20px;
+        }
+        
+        #test3 {
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 18px;
+            padding-bottom: 30px;
+            padding-top: 20px;
+            margin: 20px;
+        }
+        
+        #testTitle {
+            font-family: 'Amatic SC', cursive;
+            font-size: 60px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        
+/*
+        #testimonal {
+    background: #d4e4ef;
+    background: -moz-linear-gradient(45deg, #d4e4ef 34%, #86aecc 72%);
+    background: -webkit-linear-gradient(45deg, #d4e4ef 34%, #86aecc 72%);
+    background: linear-gradient(45deg, #d4e4ef 34%, #86aecc 72%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc', GradientType=1);
+}
+*/
+        
+        #testPic {
+            border: 2.5px solid #021a40;
+        }
+        
+        #slides_control > div {
+            height: 200px;
+        }
+        
+        #slides_control {
+            position: absolute;
+            width: 400px;
+            left: 50%;
+            top: 20px;
+            margin-left: -200px;
+        }
+        
+        #slidePics {
+            width: 1230px;
+        }
+        
+        #investTitle {
+            font-family: 'Amatic SC', cursive;
+            font-size: 60px;
+            padding-bottom: 35px;
+        }
+        
+        .investSection {
+            font-size: 48px;
+            font-family: 'Open Sans Condensed', sans-serif;
+        }
+        
+        p {
+            font-size: 28px;
+            font-family: 'Amatic SC', cursive;
+            margin: 42px;
+        }
+        
+        #investEnd {
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 18px;
+        }
+        
+        #faqTitle {
+            font-family: 'Amatic SC', cursive;
+            font-size: 60px;
+            padding-top: 20px;
+            /*            padding-bottom: 15px;*/
+        }
+        
+        .faqBackground {
+            /*            background-image: url("https://s-media-cache-ak0.pinimg.com/736x/42/dd/a0/42dda08c9f6ccdb95e3b97d3424a5c83.jpg");*/
+            background: #fac695;
+            background: -moz-linear-gradient(top, #fac695 0%, #f5ab66 47%, #ef8d31 100%);
+            background: -webkit-linear-gradient(top, #fac695 0%, #f5ab66 47%, #ef8d31 100%);
+            background: linear-gradient(to bottom, #fac695 0%, #f5ab66 47%, #ef8d31 100%);
+            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fac695', endColorstr='#ef8d31', GradientType=0);
+            height: auto;
+            padding-bottom: 30px;
+            width: auto;
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: .60;
+        }
+        
+        .faqSection {
+            font-size: 25px;
+            font-family: 'Open Sans Condensed', sans-serif;
+            margin: 3em;
+        }
+        
+        .images {
+            padding: 7px;
+            /*            border: 2.5px solid #021a40;*/
+        }
+        
+        #galleryTitle {
+            font-size: 50px;
+            font-family: 'Amatic SC', cursive;
+            padding: 20px;
+        }
+        
+        #galleryMain {
+            font-size: 90px;
+            font-family: 'Amatic SC', cursive;
+        }
+        
+        .galleryBackground {
+            /*            background-image: url("backgrounds/12.jpg");*/
+            height: auto;
+            padding-bottom: 30px;
+            width: auto;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: ghostwhite;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            padding: 12px 16px;
+            z-index: 1;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropbtn {
+            background-color: transparent;
+            background: transparent;
+            border-color: transparent;
+            color: black;
+            font-size: 30px;
+            border: none;
+            cursor: pointer;
+            font-family: 'Amatic SC', cursive;
+        }
+        
+        #enlarge {
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 15px;
+            text-align: center;
+        }
